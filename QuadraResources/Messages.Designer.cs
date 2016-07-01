@@ -61,11 +61,29 @@ namespace QuadraResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Возникла ошибка при чтении описания параметров элементов. Исправьте или удалите файл {0}..
+        /// </summary>
+        public static string ErrorLoadingElementParameters {
+            get {
+                return ResourceManager.GetString("ErrorLoadingElementParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Файл {0} не найден..
         /// </summary>
         public static string FileNotFound {
             get {
                 return ResourceManager.GetString("FileNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Не удалось создать файл {0}..
+        /// </summary>
+        public static string UnableToCreateFile {
+            get {
+                return ResourceManager.GetString("UnableToCreateFile", resourceCulture);
             }
         }
     }

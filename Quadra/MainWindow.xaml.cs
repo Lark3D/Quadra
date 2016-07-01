@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuadraCore.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,14 @@ namespace QuadraCore
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var pd = ElementParameters.GetParameterDescriptions("WC");
+            MessageBox.Show(pd["L"].MaxValue.ToString());
+            // Place to test smthng...
+
         }
     }
 }
