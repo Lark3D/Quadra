@@ -53,13 +53,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Helpers\ILogger.cs" />
-    <Compile Include="Helpers\Log.cs" />
-    <Compile Include="Helpers\MessageLoggedEventArgs.cs" />
-    <Compile Include="Interfaces\ITaskRepoService.cs" />
-    <Compile Include="Models\ElementId.cs" />
-    <Compile Include="Models\TaskDescription.cs" />
-    <Compile Include="Services\XmlTaskRepoService.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -75,7 +68,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Element.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -99,7 +91,15 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuadraCore\QuadraCore.csproj">
+      <Project>{e334046a-adce-4700-810c-31b4715024f0}</Project>
+      <Name>QuadraCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
