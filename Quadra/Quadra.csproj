@@ -99,6 +99,10 @@
       <Project>{e334046a-adce-4700-810c-31b4715024f0}</Project>
       <Name>QuadraCore</Name>
     </ProjectReference>
+    <ProjectReference Include="..\QuadraResources\QuadraResources.csproj">
+      <Project>{e0aa512e-2c7c-4b42-bdc4-291a1715da40}</Project>
+      <Name>QuadraResources</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

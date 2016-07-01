@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Quadra.Models
+namespace QuadraCore.Models
 {
     public class TaskDescription
     {
@@ -15,6 +15,7 @@ namespace Quadra.Models
             DateModified = DateTime.Now;
             LastFile = string.Empty;
         }
+
         #region Properties
         public string Name { get; set; }
         public string Description { get; set; }

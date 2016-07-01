@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Quadra.Properties
+namespace QuadraCore.Properties
 {
 
 

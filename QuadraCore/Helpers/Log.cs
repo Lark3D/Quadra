@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Quadra.Helpers
+namespace QuadraCore.Helpers
 {
     public static class Log
     {
@@ -27,7 +27,7 @@ namespace Quadra.Helpers
             WarningLogged?.Invoke(null, new MessageLoggedEventArgs(message, exception));
         }
 
-        public static void Error(string message, Exception exception)
+        public static void Error(string message, Exception exception = null)
         {
             Instance?.Error(message, exception);
             ErrorLogged?.Invoke(null, new MessageLoggedEventArgs(message, exception));

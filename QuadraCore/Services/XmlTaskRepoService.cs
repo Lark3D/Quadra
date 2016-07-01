@@ -1,14 +1,30 @@
-﻿using Quadra.Interfaces;
+﻿using QuadraCore.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Quadra.Models;
+using QuadraCore.Models;
+using System.IO;
+using QuadraCore.Helpers;
+using QuadraResources;
 
-namespace Quadra.Services
+namespace QuadraCore.Services
 {
     class XmlTaskRepoService : ITaskRepoService
     {
+        private string _file = String.Empty;
+
+        public XmlTaskRepoService(string file)
+        {
+            if (!File.Exists(file))
+            {
+                string msg = string.Format(Messages.FileNotFound, file);
+                Log.Error(msg);
+                throw new FileNotFoundException(msg, file);
+            }
+            _file = file;
+        }
+
         public void DeleteElement(ElementId elementId)
         {
             //TODO

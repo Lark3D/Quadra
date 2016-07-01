@@ -1,10 +1,10 @@
-﻿using Quadra.Models;
+﻿using QuadraCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Quadra.Interfaces
+namespace QuadraCore.Interfaces
 {
     public interface ITaskRepoService
     {

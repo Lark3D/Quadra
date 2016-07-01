@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Quadra.Helpers
+namespace QuadraCore.Helpers
 {
     public class MessageLoggedEventArgs : EventArgs
     {
