@@ -123,6 +123,9 @@
   <data name="FileNotFound" xml:space="preserve">
     <value>Файл {0} не найден.</value>
   </data>
+  <data name="MessageToUser" xml:space="preserve">
+    <value>Привет!</value>
+  </data>
   <data name="UnableToCreateFile" xml:space="preserve">
     <value>Не удалось создать файл {0}.</value>
   </data>

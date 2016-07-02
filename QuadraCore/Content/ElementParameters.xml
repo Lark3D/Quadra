@@ -8,6 +8,8 @@
 
   <!-- Кабльная линия -->
   <Element Code="WC">
+    <Text>Кабельная линия</Text>
+    <Description>Схемное обозначение кабельной линии</Description>
     <Parameter Name="TYPE">
       <Type>string</Type>
       <Text>Тип</Text>

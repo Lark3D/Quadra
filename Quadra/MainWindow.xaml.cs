@@ -1,4 +1,5 @@
 ﻿using QuadraCore.Helpers;
+using QuadraCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace QuadraCore
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var pd = ElementParameters.GetParameterDescriptions("WC");
+            Dictionary<String, ParameterDescription> pd = ElementParameters.GetParameterDescriptions("WC");
             MessageBox.Show(pd["L"].MaxValue.ToString());
             // Place to test smthng...
 
