@@ -16,52 +16,18 @@ namespace QuadraCore.Services
 
         public XmlTaskRepoService(string file)
         {
-            if (!File.Exists(file))
-            {
-                string msg = string.Format(Messages.FileNotFound, file);
-                Log.Error(msg);
-                throw new FileNotFoundException(msg, file);
-            }
             _file = file;
+
+            //TODO Создать файл, если нет
         }
 
-        public void DeleteElement(ElementId elementId)
+        public Task LoadTask()
         {
             //TODO
             throw new NotImplementedException();
         }
 
-        public IObservable<ElementId> GetAllElementIds()
-        {
-            //TODO
-            throw new NotImplementedException();
-        }
-
-        public IObservable<Element> GetAllElements()
-        {
-            //TODO
-            throw new NotImplementedException();
-        }
-
-        public void GetElement(ElementId elementId)
-        {
-            //TODO
-            throw new NotImplementedException();
-        }
-
-        public TaskDescription LoadTaskDescription()
-        {
-            //TODO
-            throw new NotImplementedException();
-        }
-
-        public void SaveElement(Element element)
-        {
-            //TODO
-            throw new NotImplementedException();
-        }
-
-        public void SaveTaskDescription(TaskDescription taskDescription)
+        public void SaveTask(Task task)
         {
             //TODO
             throw new NotImplementedException();
